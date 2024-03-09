@@ -1,0 +1,51 @@
+.kode-mono {
+    font-family: "Kode_Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #b4b2b2;
+    display: flex;
+    /*設menu為彈性容器*/
+    justify-content: center;
+    /*置中*/
+}
+
+.menu {
+    width: 350px;
+    background: white;
+    display: flex;
+    /*設menu為彈性容器*/
+    justify-content: space-around;
+    /*將內容平均分配於容器中*/
+    padding: 5px;
+    /*文字與nav容器的距離*/
+    border-radius: 22px;
+    /*容器變圓角*/
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    /*容器加入陰影*/
+}
+
+.menu>a {
+    color: black;
+    /*文字顏色*/
+    text-decoration: none;
+    /*取消底線*/
+    padding: 8px 16px;
+    /*文字與a容器的距離*/
+    border-radius: 22px;
+    /*容器變圓角*/
+
+    /*修改字體*/
+}
+
+.menu>a:hover {
+    transition: 0.25s;
+    /*摸到時的延遲*/
+    background: #a988f1;
+    /*摸到後的背景顏色改變*/
+    color: white;
+    /*文字顏色*/
+}
