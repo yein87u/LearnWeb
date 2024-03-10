@@ -13,12 +13,22 @@
 </head>
 
 <body>
-    <nav class="menu">
-        <a class="kode-mono" href="#">Home</a>
-        <a class="kode-mono" href="">About Me</a>
-        <a class="kode-mono" href="">Project</a>
-    </nav>
+    <div>
+        <nav class="menu">
+            <a class="kode-mono" href="#">Home</a>
+            <a class="kode-mono" href="#">About Me</a>
+            <a class="kode-mono" href="#">Project</a>
+        </nav>
+    </div>
 
+    <div>
+        <form onsubmit="return false;">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name">
+            <button onclick="displayName()">Comfirm</button>
+        </form>
+    </div>
 </body>
+
 
 </html>

@@ -1,5 +1,6 @@
 .kode-mono {
     font-family: "Kode_Mono", monospace;
+    /*修改字體*/
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -7,14 +8,29 @@
 
 body {
     background-color: #b4b2b2;
+    height: 100%;
+    width: auto;
+    display: flex;
+    /*設menu為彈性容器*/
+
+    /* 將物件水平置中 */
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+div {
+    background-color: #b4b2b2;
     display: flex;
     /*設menu為彈性容器*/
     justify-content: center;
-    /*置中*/
+    /* 將物件水平置中 */
+    padding: 15px;
+    border: 2px solid rgb(139, 59, 59);
 }
 
 .menu {
-    width: 350px;
+    width: 600px;
     background: white;
     display: flex;
     /*設menu為彈性容器*/
@@ -37,8 +53,6 @@ body {
     /*文字與a容器的距離*/
     border-radius: 22px;
     /*容器變圓角*/
-
-    /*修改字體*/
 }
 
 .menu>a:hover {
@@ -48,4 +62,13 @@ body {
     /*摸到後的背景顏色改變*/
     color: white;
     /*文字顏色*/
+}
+
+@media screen and (max-width: 600px) {
+    .a {
+        width: 100px;
+        /* 當寬度小於 600px 時，設置寬度為 100px */
+        height: 100px;
+        /* 當寬度小於 600px 時，設置高度為 100px */
+    }
 }
