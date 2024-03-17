@@ -5,11 +5,13 @@
     <!--用UTF-8編碼，並引入CSS文件-->
     <meta charset="UTF-8">
     <title>Web Learning</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/style.css" />
     <!--新增字體-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
@@ -22,10 +24,13 @@
     </div>
 
     <div>
-        <form onsubmit="return false;">
+        <form id="customer_name_email">
             <label for="name">Enter your name:</label>
-            <input type="text" id="name">
-            <button onclick="displayName()">Comfirm</button>
+            <input class="input_some" type="text" id="name">
+            <label for="email">email</label>
+            <input class="input_some" type="email" id="email">
+
+            <button class="Comfirm" type="submit">Comfirm</button>
         </form>
     </div>
 </body>

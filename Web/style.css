@@ -12,9 +12,8 @@ body {
     width: auto;
     display: flex;
     /*設menu為彈性容器*/
-
-    /* 將物件水平置中 */
     flex-direction: column;
+    /* 將物件垂直擺放 */
     border: 2px solid black;
     padding: 15px;
 }
@@ -65,10 +64,20 @@ div {
 }
 
 @media screen and (max-width: 600px) {
-    .a {
+    a {
         width: 100px;
         /* 當寬度小於 600px 時，設置寬度為 100px */
         height: 100px;
         /* 當寬度小於 600px 時，設置高度為 100px */
     }
+}
+
+.input_some {
+    border-radius: 22px;
+    padding: 8px;
+}
+
+.Comfirm {
+    border-radius: 22px;
+    padding: 8px;
 }
