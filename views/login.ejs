@@ -1,0 +1,17 @@
+
+<html>
+    <%- include('partials/head') %>
+    <%- include('partials/header') %>
+
+
+    <body>
+        <form id="login_information" action="/submit-customer" method="POST">
+            <label for="name">Enter your name:</label>
+            <input class="input" type="text" id="name" name="name">
+            <label for="email">email</label>
+            <input class="input" type="email" id="email" name="email">
+
+            <button class="Comfirm" type="submit">Comfirm</button>
+        </form>
+    </body>
+</html>
