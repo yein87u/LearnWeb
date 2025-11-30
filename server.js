@@ -16,6 +16,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 // 🌟 啟用中介軟體：讓 Express 能夠解析 POST 請求中的表單數據
 app.use(express.urlencoded({ extended: true }));
 
+// 攔截 /favicon.ico 請求，並回傳 204 No Content, 告訴瀏覽器：「請求成功，但沒有內容可以回傳」
+app.get('/favicon.ico', (req, res) => {
+    res.status(204).end(); 
+});
 
 // 定義根路徑路由
 app.get('/', (req, res) => {

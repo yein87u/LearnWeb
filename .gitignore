@@ -1,0 +1,9 @@
+# 環境變數檔案 (保護您的密碼)
+.env
+
+# Node.js 專案的依賴資料夾 (不應該被提交)
+node_modules
+
+# 作業系統/IDE 產生的檔案
+.DS_Store
+Thumbs.db
