@@ -1,13 +1,16 @@
+// 確保在模組最開始就加載環境變數
+require('dotenv').config();
+
 const mysql = require('mysql2/promise'); // 匯入 mysql2 並使用 Promise 版本
 
-// 🌟 資料庫連線設定 (請替換為你的實際資訊)
+// 從環境變數 (process.env) 中讀取配置
 const dbConfig = {
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: '',
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE,
     waitForConnections: true,
-    connectionLimit: 10, // 設定連線池大小
+    connectionLimit: 10,
     queueLimit: 0
 };
 
